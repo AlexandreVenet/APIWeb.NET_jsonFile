@@ -13,7 +13,9 @@ public class TempsController
 
 
 
-	#region Routes methods
+	#region Methods sync
+
+	// Routes
 
 	public static TempsListReturn GetAll()
 	{
@@ -135,11 +137,7 @@ public class TempsController
 		return new("Objet supprimé", obj);
 	}
 
-	#endregion
-
-
-
-	#region Methods
+	// File 
 
 	private static List<Temps> ReadFile()
 	{
